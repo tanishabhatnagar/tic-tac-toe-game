@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  
+
+ 
+html{
+    height: 100vh;
+
+}
+
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    padding: 0 15px;
+    height: 100vh;
+    border:30px double rgb(237, 188, 205);
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.main-hd{
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.main-hd h2{
+    font-size: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:deeppink;
+    text-shadow: 3px 3px black;
+}
+ 
+ .main-hd h2 {
+    overflow: hidden; 
+    animation: typewriter 4s steps(30) infinite;
+    white-space: nowrap; 
+    border-right: 2px solid black; 
+  }
+.user-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px 5px;
+
+}
+
+.user-form h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color:hotpink;
+    text-shadow: 2 px 2px #388087;
+    padding: 10px;
+}
+
+.user-form input{
+    width:100%;
+    height: 40px;
+    outline: none;
+    background:azure;
+    color:grey;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid bkack;
+    margin: 15px 0;
+
+}
+.user-form button{
+    display: block;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    outline: none;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    color: azure;
+    cursor: pointer;
+    align-items: center;
+    background-color:hotpink;
+
+
+
+}
+.user-form button:hover{
+    background-color:white;
+    transition: 0.5s;
+    color: hotpink;
+}
+#player1{
+    color:black;
+}
+#player2{
+    color:black;
+}
+
+
+
+::placeholder{
+    color:rgb(154, 151, 151);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    visibility: visible;
+    display: block;
+
+}
+
+.hide{
+    display:none ;
+}
+
+.userBtn{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.userBtn button{
+    margin:15px 10px;
+    width:140px;
+    height:auto;
+    outline:none;
+    color:#388087;
+    font-family: cursive;
+    padding: 8px;
+    border-radius: 25px;
+    border: 2px solid hotpink;
+    font-weight: bold;
+    color: black;
+    overflow:hidden;
+}
+
+.userBtn button:disabled{
+    background-color: grey;
+}
+.allboxes{
+    width:100%;
+}
+table{
+    max-width: 350px;
+    margin: auto;
+}
+
+td{
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.one,.three{
+    border-bottom: none;
+}
+
+.one,.three,.four,.six{
+    border: 2px solid black;
+    border-bottom: none;
+
+}
+
+.two,.eight{
+     border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.five{
+    border-top:2px solid black;
+}
+.two{
+    border-bottom: none;
+}
+.seven,.nine{
+    border-top:none;
+    border: 2px solid black;
+
+}
+
+.tdDisable{
+    pointer-events: none;
+
+}
+
+.resultbox{
+    border: 2px dashed black;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+
+#winName{
+    margin:15px 0;
+    font-size: 45px;
+    font-family: cursive;
+    color:red;
+    align-items: center;
+}
+
+#winning{
+    font-family: cursive;
+    font-size: 35px;
+    color:red;
+    margin: 15px 0;
+    align-items: center;
+
+
+}
+.resultBtn button{
+    margin:15 px 10px;
+    width:140px;
+    outline:none;
+    cursor:pointer;
+    background-color: hotpink;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 40px;
+    color: aliceblue;
+    overflow: hidden;
+    border:none;
+}
+
+.resultBtn button:hover{
+    background-color:white;
+    color:hotpink;
+
+}
+
+

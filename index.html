@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main">
+      <section class="main-hd">
+        <h2>TIC TAC TOE</h2>
+      </section>
+      <section>
+        <div id="form" class="user-form">
+          <h3>player's details</h3>
+          <input type="text" placeholder="player1" id="player1" />
+
+          <input type="text" placeholder="player2" id="player2" />
+          <button onclick="start()">start</button>
+        </div>
+
+        <section id="gamebox" class="gamebox hide">
+          <div class="userBtn">
+            <button id="xUserBtn"></button>
+            <button id="oUserBtn"></button>
+          </div>
+
+          <div class="allboxes">
+            <table>
+              <tr>
+                <td class="one"></td>
+                <td class="two"></td>
+                <td class="three"></td>
+              </tr>
+              <tr>
+                <td class="four"></td>
+                <td class="five"></td>
+                <td class="six"></td>
+              </tr>
+              <tr>
+                <td class="seven"></td>
+                <td class="eight"></td>
+                <td class="nine"></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </section>
+      <section class="resultbox hide">
+        <div id="winName">
+          <h2 id="winChange"></h2>
+        </div>
+
+        <div id="winning">
+          <h2 id="winningHeading"></h2>
+        </div>
+
+        <div class="resultBtn">
+          <button onclick="window.location.reload()">restart</button>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
